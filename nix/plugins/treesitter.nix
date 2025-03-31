@@ -29,4 +29,13 @@
       zig
     ];
   };
+
+  plugins.treesitter-context = {
+    enable = true;
+    settings = {
+      enable = true;
+      multiline_threshold = 8;
+      min_window_height = 16;
+    };
+  };
 }
