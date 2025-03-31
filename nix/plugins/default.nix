@@ -8,6 +8,7 @@ let
     ./telescope.nix
     ./treesitter.nix
     ./whichkey.nix
+    ./wilder.nix
   ];
 
 in pkgs.lib.mkMerge (builtins.map
