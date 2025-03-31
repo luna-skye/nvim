@@ -10,7 +10,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
         nixvim' = nixvim.legacyPackages.${system};
-        helpers = import ./helpers.nix {};
+        helpers = import ./helpers.nix { inherit pkgs; };
 
         nixvimModule = import ./nix/nixvim.nix {
           inherit pkgs inputs helpers;

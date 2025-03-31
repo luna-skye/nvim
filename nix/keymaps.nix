@@ -1,8 +1,6 @@
 { helpers, ... }: {
   globals.mapleader = " ";
   keymaps = [
-    # (helpers.mkKeymap "n" "<leader>L" "<CMD>Lazy<CR>" "Open Lazy")
-    
     # general utilities
     (helpers.mkKeymap "n" "<Esc>" "<CMD>nohlsearch<CR>" "Clear search highlighting")
     (helpers.mkKeymap "n" "<leader>w" "<CMD>w<CR>" "Write Current Buffer")
