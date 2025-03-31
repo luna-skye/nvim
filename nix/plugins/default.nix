@@ -2,6 +2,7 @@
 
 let
   enabledPlugins = [
+    ./lualine.nix
     ./oil.nix
     ./snacks.nix
     ./telescope.nix
