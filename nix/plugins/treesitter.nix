@@ -27,6 +27,7 @@
       go gomod gosum
       nim
       zig
+      regex
     ];
   };
 
