@@ -4,6 +4,7 @@ let
   enabledPlugins = [
     ./ccc.nix
     ./cmp.nix
+    ./git.nix
     ./lsp.nix
     ./lualine.nix
     ./oil.nix
