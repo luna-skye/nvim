@@ -3,6 +3,7 @@
 let
   enabledPlugins = [
     ./oil.nix
+    ./snacks.nix
     ./telescope.nix
     ./whichkey.nix
   ];
