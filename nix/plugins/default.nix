@@ -2,6 +2,7 @@
 
 let
   enabledPlugins = [
+    ./oil.nix
     ./telescope.nix
     ./whichkey.nix
   ];
