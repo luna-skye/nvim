@@ -7,6 +7,7 @@ let
     ./oil.nix
     ./snacks.nix
     ./treesitter.nix
+    ./trouble.nix
     ./whichkey.nix
     ./wilder.nix
   ];
