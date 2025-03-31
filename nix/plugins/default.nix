@@ -3,6 +3,7 @@
 let
   enabledPlugins = [
     ./ccc.nix
+    ./lsp.nix
     ./lualine.nix
     ./oil.nix
     ./snacks.nix
