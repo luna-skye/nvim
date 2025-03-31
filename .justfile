@@ -6,6 +6,10 @@ build:
 check:
   nix flake check --no-build --show-trace .
 
+# build and run nixvim
+run:
+  nix run .#
+
 # update nix flake inputs
 update:
   nix flake update
