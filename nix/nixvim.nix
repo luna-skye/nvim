@@ -6,7 +6,13 @@ let
 in {
   config = pkgs.lib.mkMerge [
     {
-      colorschemes.catppuccin.enable = true;
+      colorschemes.catppuccin = {
+        enable = true;
+        settings = {
+          flavour = "mocha";
+          color_overrides.all = {};
+        };
+      };
 
       viAlias = true;
       vimAlias = true;
