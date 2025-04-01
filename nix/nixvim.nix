@@ -37,6 +37,8 @@
         completeopt = "menuone,noselect";
         undofile = true;
         mousemoveevent = true;
+        autoindent = true;
+        cindent = true;
       };
 
       extraPackages = [
