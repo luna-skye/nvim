@@ -4,8 +4,9 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-utils.url = "github:numtide/flake-utils";
+    stellae.url = "github:luna-skye/stellae";
   };
-  outputs = { nixpkgs, nixvim, flake-utils, ... }@inputs:
+  outputs = { nixpkgs, nixvim, flake-utils, stellae, ... }@inputs:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; };
@@ -13,7 +14,7 @@
         helpers = import ./helpers.nix { inherit pkgs; };
 
         nixvimModule = import ./nix/nixvim.nix {
-          inherit pkgs inputs helpers;
+          inherit pkgs inputs helpers stellae;
           configDir = ./lua;
         };
 

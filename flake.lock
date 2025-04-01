@@ -164,7 +164,26 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
-        "nixvim": "nixvim"
+        "nixvim": "nixvim",
+        "stellae": "stellae"
+      }
+    },
+    "stellae": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1743498800,
+        "narHash": "sha256-uWMNflkK9LynH/m28IZ7GEpC4Z1I0H6E9P17ET86/sI=",
+        "owner": "luna-skye",
+        "repo": "stellae",
+        "rev": "bdc601cfe1770b4c545a5b026c68bbbbde81c3eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "luna-skye",
+        "repo": "stellae",
+        "type": "github"
       }
     },
     "systems": {
