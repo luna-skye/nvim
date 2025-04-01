@@ -1,16 +1,13 @@
-{ pkgs, inputs, configDir, helpers, ... }:
+{ pkgs
+, inputs
+, configDir
+, helpers
+, stellae
+, ... }:
 
 {
   config = pkgs.lib.mkMerge [
     {
-      colorschemes.catppuccin = {
-        enable = true;
-        settings = {
-          flavour = "mocha";
-          color_overrides.all = {};
-        };
-      };
-
       viAlias = true;
       vimAlias = true;
 
@@ -47,6 +44,7 @@
         pkgs.fd
       ];
     }
+    (import ./colorscheme.nix { inherit helpers stellae; })
     (import ./keymaps.nix { inherit helpers; })
     (import ./plugins/default.nix { inherit pkgs helpers; })
   ];
