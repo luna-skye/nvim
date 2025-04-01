@@ -9,6 +9,7 @@ let
     ./lualine.nix
     ./oil.nix
     ./snacks.nix
+    ./statuscol.nix
     ./tmux.nix
     ./treesitter.nix
     ./trouble.nix
