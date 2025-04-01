@@ -17,6 +17,8 @@
   };
 
   keymaps = [
-    (helpers.mkKeymap "n" "<leader>c" "<CMD>CccPick<CR>" "Open Color Picker")
+    (helpers.mkKeymap "n" "<leader>cp" "<CMD>CccPick<CR>" "Open Color Picker")
+    (helpers.mkKeymap "n" "<leader>cc" "<CMD>CccConvert<CR>" "Convert Color at Cursor")
+    (helpers.mkKeymap "n" "<leader>ch" "<CMD>CccHighlightToggle<CR>" "Toggle Color Highlighter")
   ];
 }
