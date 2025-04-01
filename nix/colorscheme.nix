@@ -6,7 +6,7 @@ let
   toHex = hsl: stellae.lib.colors.hslToHex hsl;
 
 in {
-  colorschemes.catppuccin =  {
+  colorschemes.catppuccin = {
     enable = true;
     settings = {
       flavour = "mocha";
@@ -29,14 +29,14 @@ in {
 
   programs.nixvim.highlight = {
     CustomFloatBorder = {
-      fg = "#${colors.light_purple}";
-      bg = "#${colors.mantle}";
+      fg = "#${colors.accent.light_purple}";
+      bg = "#${colors.surface.mantle}";
     };
   };
 
   programs.nixvim.highlightOverride = {
     FloatBorder = {
-      fg = "#${colors.light_purple}";
+      fg = "#${colors.accent.light_purple}";
     };
   };
 }
