@@ -39,4 +39,9 @@
       min_window_height = 16;
     };
   };
+
+  colorschemes.catppuccin.settings.integrations = {
+    treesitter = true;
+    treesitter_context = true;
+  };
 }

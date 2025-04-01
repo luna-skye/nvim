@@ -22,4 +22,6 @@
   keymaps = [
     (helpers.mkKeymap "n" "<leader>?" "<CMD>WhichKey<CR>" "Local Keymaps (WhichKey)")
   ];
+
+  colorschemes.catppuccin.settings.integrations.which_key = true;
 }
