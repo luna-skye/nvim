@@ -10,7 +10,7 @@ in {
     enable = true;
     settings = {
       flavour = "mocha";
-      color_overrides.all = builtins.trace colors {
+      color_overrides.all = {
         crust    = "#${toHex colors.surface.crust}";
         mantle   = "#${toHex colors.surface.mantle}";
         base     = "#${toHex colors.surface.base}";
