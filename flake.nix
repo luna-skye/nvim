@@ -25,8 +25,17 @@
           type = "app";
           program = "${nvim}/bin/nvim";
         };
-        devShells.default = pkgs.mkShell {
-          packages = [ nvim ];
+      }
+    ) // (
+      let
+        mkNixvim = system: let
+          pkgs = import nixpkgs { inherit system; };
+          helpers = import ./helpers.nix { inherit pkgs; };
+        in import ./nix/nixvim.nix { inherit pkgs inputs system helpers stellae; };
+      in {
+        nixosModules.default = import ./nix/module.nix { inherit inputs; };
+        overlays.default = final: prev: {
+          zenvim = (mkNixvim prev.system).config.build;
         };
       }
     );
