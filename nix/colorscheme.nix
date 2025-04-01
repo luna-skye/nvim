@@ -27,14 +27,14 @@ in {
     };
   };
 
-  programs.nixvim.highlight = {
+  highlight = {
     CustomFloatBorder = {
       fg = "#${toHex colors.accent.light_purple}";
       bg = "#${toHex colors.surface.mantle}";
     };
   };
 
-  programs.nixvim.highlightOverride = {
+  highlightOverride = {
     FloatBorder = {
       fg = "#${toHex colors.accent.light_purple}";
     };
