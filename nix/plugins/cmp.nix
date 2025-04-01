@@ -6,4 +6,6 @@
       signature.enabled = true;
     };
   };
+
+  colorschemes.catppuccin.settings.integrations.blink_cmp = true;
 }

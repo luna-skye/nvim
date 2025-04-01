@@ -72,4 +72,9 @@
     (helpers.mkKeymap "n" "<leader>zZ" "<CMD>lua Snacks.zoom()<CR>" "Zoom")
     (helpers.mkKeymap "n" "<leader>zd" "<CMD>lua Snacks.dim()<CR>" "Dim")
   ];
+
+  colorschemes.catppuccin.settings.integrations.snacks = {
+    enabled = true;
+    indent_scope_color = "mauve";
+  };
 }
