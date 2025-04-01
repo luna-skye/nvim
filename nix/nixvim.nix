@@ -11,7 +11,6 @@
       viAlias = true;
       vimAlias = true;
 
-      extraConfigLua = builtins.readFile "${configDir}/init.lua";
       opts = {
         termguicolors = true;
         number = true;
