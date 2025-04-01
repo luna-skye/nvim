@@ -1,3 +1,3 @@
 { pkgs, helpers, ... }: {
-  plugins.webdev-icons.enable = true;
+  plugins.web-devicons.enable = true;
 }
