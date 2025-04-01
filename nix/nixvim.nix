@@ -1,9 +1,6 @@
 { pkgs, inputs, configDir, helpers, ... }:
 
-let
-  keymaps = import ./keymaps.nix { inherit helpers; };
-  plugins = import ./plugins/default.nix { inherit pkgs helpers; };
-in {
+{
   config = pkgs.lib.mkMerge [
     {
       colorschemes.catppuccin = {
@@ -50,7 +47,7 @@ in {
         pkgs.fd
       ];
     }
-    keymaps
-    plugins
+    (import ./keymaps.nix { inherit helpers; })
+    (import ./plugins/default.nix { inherit pkgs helpers; })
   ];
 }
