@@ -11,6 +11,7 @@ let
     ./snacks.nix
     ./treesitter.nix
     ./trouble.nix
+    ./web-devicons.nix
     ./whichkey.nix
     ./wilder.nix
   ];
