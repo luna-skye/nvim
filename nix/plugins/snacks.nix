@@ -3,6 +3,43 @@
     enable = true;
     settings = {
       bigfile.enabled = true;
+      dashboard = {
+        enabled = true;
+        preset = {
+          header = ''
+.   . . . . .-.       .-. . . . . .-.
+|   | | |\| |-|      `-. |<   |  |- 
+`-- `-' ' ` ` '       `-' ' `  `  `-'
+          '';
+        };
+        sections = [
+          {
+            section = "header";
+            padding = 1;
+          }
+          {
+            icon = " ";
+            title = "Keymaps";
+            section = "keys";
+            padding = 1;
+            indent = 3;
+          }
+          {
+            icon = " ";
+            title = "Projects";
+            section = "projects";
+            padding = 1;
+            indent = 3;
+          }
+          {
+            icon = " ";
+            title = "Recent Files";
+            section = "recent_files";
+            padding = 1;
+            indent = 3;
+          }
+        ];
+      };
       dim.enabled = true;
       indent.enable = true;
       git.enabled = true;
