@@ -32,8 +32,6 @@ in {
           return {
             Normal = { bg = main_bg },
             TreesitterContext = { bg = float_bg },
-            LineNr = { bg = main_bg },
-            SignColumn = { bg = main_bg },
             TreesitterContext = { bg = float_bg },
             TreesitterContextLineNumber = { bg = float_bg },
             WhichKeyFloat = { bg = main_bg },
