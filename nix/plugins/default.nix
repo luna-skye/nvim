@@ -9,6 +9,7 @@ pkgs.lib.mkMerge (builtins.map (v: import v { inherit pkgs helpers; }) [
   ./mini.nix
   ./multicursors.nix
   ./oil.nix
+  ./rainbow-delimiters.nix
   ./snacks.nix
   ./statuscol.nix
   ./tmux.nix
