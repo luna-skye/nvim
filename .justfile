@@ -1,6 +1,6 @@
 # build nixvim
 build:
-  nix run .#
+  nix build .#
 
 # check evaluation
 check:
