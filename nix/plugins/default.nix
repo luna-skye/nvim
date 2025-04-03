@@ -1,5 +1,6 @@
 { pkgs, helpers, ... }:
 pkgs.lib.mkMerge (builtins.map (v: import v { inherit pkgs helpers; }) [
+  ./barbecue.nix
   ./ccc.nix
   ./cmp.nix
   ./git.nix
