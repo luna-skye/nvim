@@ -18,4 +18,5 @@ pkgs.lib.mkMerge (builtins.map (v: import v { inherit pkgs helpers; }) [
   ./web-devicons.nix
   ./whichkey.nix
   ./wilder.nix
+  ./yazi.nix
 ])

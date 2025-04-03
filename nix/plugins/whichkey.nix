@@ -47,6 +47,11 @@
           group = "Zen Mode";
           icon = " ";
         }
+        {
+          __unkeyed-1 = "<leader>y";
+          group = "Yazi File Explorer";
+          icon = " ";
+        }
       ];
     };
   };
