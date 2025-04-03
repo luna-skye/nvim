@@ -17,7 +17,7 @@
       scope.enabled = true;
       scratch.enabled = true;
       scroll.enabled = true;
-      statuscolumn.enabled = true;
+      # statuscolumn.enabled = true;
       terminal.enabled = true;
       toggle = {
         map = { __raw = ''vim.keymap.set''; };
