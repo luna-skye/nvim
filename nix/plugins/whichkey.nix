@@ -52,6 +52,11 @@
           group = "Yazi File Explorer";
           icon = " ";
         }
+        {
+          __unkeyed-1 = "<leader>b";
+          group = "Buffer Management";
+          icon = "󰈙 ";
+        }
       ];
     };
   };
