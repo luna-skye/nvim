@@ -1,4 +1,4 @@
-{ pkgs, helpers, ... }: {
+{ ... }: {
   plugins.statuscol = {
     enable = true;
     settings = {

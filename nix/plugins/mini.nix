@@ -1,4 +1,4 @@
-{ pkgs, helpers, ... }: {
+{ ... }: {
   plugins.mini = {
     enable = true;
     modules = {

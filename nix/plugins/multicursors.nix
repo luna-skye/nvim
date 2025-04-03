@@ -1,4 +1,4 @@
-{ pkgs, helpers, ... }: {
+{ helpers, ... }: {
   plugins.multicursors = { enable = true; };
 
   keymaps = [

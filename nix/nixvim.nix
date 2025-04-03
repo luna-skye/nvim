@@ -1,6 +1,4 @@
 { pkgs
-, inputs
-, configDir
 , helpers
 , stellae
 , ... }:

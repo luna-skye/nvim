@@ -1,4 +1,4 @@
-{ pkgs, helpers, ... }: {
+{ helpers, ... }: {
   plugins.oil = {
     enable = true;
 

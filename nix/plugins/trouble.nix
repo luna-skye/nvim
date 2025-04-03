@@ -1,4 +1,4 @@
-{ pkgs, helpers, ... }: {
+{ helpers, ... }: {
   plugins.trouble = {
     enable = true;
     settings = {

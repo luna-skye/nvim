@@ -1,4 +1,4 @@
-{ pkgs, helpers, ... }: {
+{ ... }: {
   plugins.rainbow-delimiters = {
     enable = true;
   };

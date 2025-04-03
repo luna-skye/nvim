@@ -1,4 +1,4 @@
-{ pkgs, helpers, ... }: {
+{ ... }: {
   plugins.lualine = {
     enable = true;
 
