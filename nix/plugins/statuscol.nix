@@ -5,24 +5,30 @@
       clickmod = "c";
       ft_ignore = null;
       relculright = true;
+      setopt = true;
 
       segments = let
-        empty = { text = [ " " ]; };
+        empty_col = { text = [ " " ]; colwidth = 1; };
+        not_empty = { __raw = "require('statuscol.builtin').not_empty"; };
+        foldfunc = { __raw = "require('statuscol.builtin').foldfunc"; };
+        lnumfunc = { __raw = "require('statuscol.builtin').lnumfunc"; };
       in [
-        (empty)
-        { click = "v:lua.ScFa"; text = [ " " "%C" ]; }
-        { click = "v:lua.ScSa"; text = [ " " "%s" ]; }
-        (empty)
+        empty_col
+        { click = "v:lua.ScFa"; text = [ foldfunc ]; }
+        {
+          sign = { namespace = [ ".*" ]; colwidth = 1; wrap = true; auto = true; };
+          click = "v:lua.ScSa";
+        }
         {
           click = "v:lua.ScLa";
-          condition = [ true { __raw = "require('statuscol.builtin').not_empty"; } ];
-          text = [ { __raw = "require('statuscol.builtin').lnumfunc"; } " " ];
+          condition = [ true not_empty ];
+          text = [ lnumfunc " " ];
         }
         {
           sign = { namespace = [ "gitsigns" ]; colwidth = 1; wrap = true; };
           click = "v:lua.ScSa";
         }
-        { text = [ " " ]; condition = [ true { __raw = "require('statuscol.builtin').not_empty"; } ]; }
+        empty_col
       ];
     };
   };
