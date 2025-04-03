@@ -27,7 +27,7 @@
       go gomod gosum
       nim
       zig
-      regex
+      regex latex norg typst
     ];
   };
 
