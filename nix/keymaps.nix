@@ -12,6 +12,7 @@
 
     # buffer navigation
     (helpers.mkKeymap "n" "<leader>bx" "<CMD>lua MiniBufremove.delete()<CR>" "Close Current Buffer")
+    (helpers.mkKeymap "n" "<leader>bX" "<CMD>lua MiniBufremove.delete(0, true)<CR>" "Close Current Buffer (Forced)")
     (helpers.mkKeymap "n" "<leader>bn" "<CMD>enew<CR>" "Create New Buffer")
     (helpers.mkKeymap "n" "<leader>ba" "<C-^>" "Alternate Buffer")
     (helpers.mkKeymap "n" "<M-,>" "<CMD>bprevious<CR>" "Previous Buffer")
