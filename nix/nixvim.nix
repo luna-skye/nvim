@@ -36,6 +36,7 @@
         completeopt = "menuone,noselect";
         undofile = true;
         mousemoveevent = true;
+        fillchars = { eob = " "; };
       };
 
       extraPackages = [
