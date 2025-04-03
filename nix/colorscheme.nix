@@ -1,4 +1,4 @@
-{ helpers, stellae, ... }:
+{ stellae, ... }:
 
 let
   colors = stellae.lib.colors.convertElementTokens
@@ -36,6 +36,7 @@ in {
             TreesitterContextLineNumber = { bg = float_bg },
             WhichKeyFloat = { bg = main_bg },
             SnacksPickerPickWin = { bg = float_bg },
+            CursorLineNr = { fg = colors.mauve, bold = true },
           }
         end
       '';
