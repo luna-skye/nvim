@@ -16,6 +16,38 @@
           [ "<[bB][sS]>"     "BACKSPACE" ]
         ];
       };
+      spec = [
+        {
+          __unkeyed-1 = "<leader>f";
+          group = "Pickers";
+          icon = " ";
+        }
+        {
+          __unkeyed-1 = "<leader>c";
+          group = "Colors";
+          icon = " ";
+        }
+        {
+          __unkeyed-1 = "<leader>g";
+          group = "Git";
+          icon = " ";
+        }
+        {
+          __unkeyed-1 = "<leader>m";
+          group = "Multicursor Selection";
+          icon = "󰗧 ";
+        }
+        {
+          __unkeyed-1 = "<leader>s";
+          group = "Split Panes";
+          icon = " ";
+        }
+        {
+          __unkeyed-1 = "<leader>z";
+          group = "Zen Mode";
+          icon = " ";
+        }
+      ];
     };
   };
 
