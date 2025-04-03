@@ -10,6 +10,9 @@
         };
       };
 
+      # https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-bufremove.md
+      bufremove = {};
+
       # https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-pairs.md
       pairs = {};
 
