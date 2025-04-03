@@ -5,6 +5,7 @@ pkgs.lib.mkMerge (builtins.map (v: import v { inherit pkgs helpers; }) [
   ./git.nix
   ./lsp.nix
   ./lualine.nix
+  ./multicursors.nix
   ./oil.nix
   ./snacks.nix
   ./statuscol.nix
