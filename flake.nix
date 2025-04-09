@@ -34,10 +34,12 @@
         in import ./nix/nixvim.nix { inherit pkgs inputs system helpers stellae; };
       in {
         # nixosModules.default = import ./nix/module.nix { inherit inputs; };
-        homeManagerModules.default = { lib, config, ... }: {
+        homeManagerModules.default = { lib, config, ... }: let
+          module = import ./nix/module.nix { inherit inputs; };
+        in {
           imports = [
             nixvim.homeManagerModules.nixvim
-            ./nix/module.nix
+            (module)
           ];
         };
         overlays.default = final: prev: {
