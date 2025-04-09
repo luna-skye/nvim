@@ -33,7 +33,13 @@
           helpers = import ./helpers.nix { inherit pkgs; };
         in import ./nix/nixvim.nix { inherit pkgs inputs system helpers stellae; };
       in {
-        nixosModules.default = import ./nix/module.nix { inherit inputs; };
+        # nixosModules.default = import ./nix/module.nix { inherit inputs; };
+        homeManagerModules.default = { lib, config, ... }: {
+          imports = [
+            nixvim.homeManagerModules.nixvim
+            ./nix/modules.nix
+          ];
+        };
         overlays.default = final: prev: {
           zenvim = (mkNixvim prev.system).config.build;
         };
