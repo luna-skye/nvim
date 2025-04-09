@@ -37,7 +37,7 @@
         homeManagerModules.default = { lib, config, ... }: {
           imports = [
             nixvim.homeManagerModules.nixvim
-            ./nix/modules.nix
+            ./nix/module.nix
           ];
         };
         overlays.default = final: prev: {
