@@ -37,6 +37,10 @@
         fillchars = { eob = " "; };
       };
 
+      extraConfigVim = /* vim */ ''
+        set nowrap
+      '';
+
       extraPackages = [
         pkgs.ripgrep
         pkgs.fd
