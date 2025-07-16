@@ -49,5 +49,6 @@
     (import ./colorscheme.nix { inherit helpers stellae; })
     (import ./keymaps.nix { inherit helpers; })
     (import ./plugins/default.nix { inherit pkgs helpers; })
+    (import ./ftdetect.nix {})
   ];
 }
