@@ -16,6 +16,7 @@ pkgs.lib.mkMerge (builtins.map (v: import v { inherit pkgs helpers; }) [
   ./tmux.nix
   ./treesitter.nix
   ./trouble.nix
+  ./wakatime.nix
   ./web-devicons.nix
   ./whichkey.nix
   ./wilder.nix

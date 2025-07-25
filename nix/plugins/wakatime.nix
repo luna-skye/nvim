@@ -1,0 +1,7 @@
+{ ... }:
+
+{
+  plugins.wakatime = {
+    enable = true;
+  };
+}
