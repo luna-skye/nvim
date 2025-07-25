@@ -13,6 +13,7 @@ pkgs.lib.mkMerge (builtins.map (v: import v { inherit pkgs helpers; }) [
   ./rainbow-delimiters.nix
   ./snacks.nix
   ./statuscol.nix
+  ./todo.nix
   ./tmux.nix
   ./treesitter.nix
   ./trouble.nix
