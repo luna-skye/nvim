@@ -3,6 +3,7 @@ pkgs.lib.mkMerge (builtins.map (v: import v { inherit pkgs helpers; }) [
   ./barbecue.nix
   ./ccc.nix
   ./cmp.nix
+  ./etlua.nix
   ./git.nix
   ./lsp.nix
   ./lualine.nix
